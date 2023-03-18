@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7554CDDD29C42A5B00CDE27F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7554CDDC29C42A5B00CDE27F /* main.cpp */; };
-		75735ECF29C599AD0038DAF8 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735ECD29C599AD0038DAF8 /* Observer.cpp */; };
+		75735ED429C5D8F60038DAF8 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735ED229C5D8F60038DAF8 /* Logger.cpp */; };
+		75735ED729C5DB060038DAF8 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735ED529C5DB060038DAF8 /* Observer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +27,10 @@
 /* Begin PBXFileReference section */
 		7554CDD929C42A5B00CDE27F /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		7554CDDC29C42A5B00CDE27F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		75735ECB29C597DD0038DAF8 /* Singleton */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Singleton; sourceTree = "<group>"; };
-		75735ECD29C599AD0038DAF8 /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
-		75735ECE29C599AD0038DAF8 /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
-		75735ED029C5A3CE0038DAF8 /* Observer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Observer; sourceTree = "<group>"; };
+		75735ED229C5D8F60038DAF8 /* Logger.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		75735ED329C5D8F60038DAF8 /* Logger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		75735ED529C5DB060038DAF8 /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Observer.cpp; path = DesignPatterns/Singleton2/Observer.cpp; sourceTree = SOURCE_ROOT; };
+		75735ED629C5DB060038DAF8 /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Observer.hpp; path = DesignPatterns/Singleton2/Observer.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,29 +63,29 @@
 		7554CDDB29C42A5B00CDE27F /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				75735ED129C5D8CD0038DAF8 /* Singleton2 */,
 				75735ECC29C599860038DAF8 /* Observer */,
-				75735EC929C596490038DAF8 /* Singleton */,
 				7554CDDC29C42A5B00CDE27F /* main.cpp */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
 		};
-		75735EC929C596490038DAF8 /* Singleton */ = {
-			isa = PBXGroup;
-			children = (
-				75735ECB29C597DD0038DAF8 /* Singleton */,
-			);
-			path = Singleton;
-			sourceTree = "<group>";
-		};
 		75735ECC29C599860038DAF8 /* Observer */ = {
 			isa = PBXGroup;
 			children = (
-				75735ECD29C599AD0038DAF8 /* Observer.cpp */,
-				75735ED029C5A3CE0038DAF8 /* Observer */,
-				75735ECE29C599AD0038DAF8 /* Observer.hpp */,
+				75735ED529C5DB060038DAF8 /* Observer.cpp */,
+				75735ED629C5DB060038DAF8 /* Observer.hpp */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		75735ED129C5D8CD0038DAF8 /* Singleton2 */ = {
+			isa = PBXGroup;
+			children = (
+				75735ED229C5D8F60038DAF8 /* Logger.cpp */,
+				75735ED329C5D8F60038DAF8 /* Logger.hpp */,
+			);
+			path = Singleton2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7554CDDD29C42A5B00CDE27F /* main.cpp in Sources */,
-				75735ECF29C599AD0038DAF8 /* Observer.cpp in Sources */,
+				75735ED729C5DB060038DAF8 /* Observer.cpp in Sources */,
+				75735ED429C5D8F60038DAF8 /* Logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
