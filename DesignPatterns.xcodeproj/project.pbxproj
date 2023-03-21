@@ -10,6 +10,10 @@
 		7554CDDD29C42A5B00CDE27F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7554CDDC29C42A5B00CDE27F /* main.cpp */; };
 		75735ED429C5D8F60038DAF8 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735ED229C5D8F60038DAF8 /* Logger.cpp */; };
 		75735ED729C5DB060038DAF8 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735ED529C5DB060038DAF8 /* Observer.cpp */; };
+		75735EDB29C5E62A0038DAF8 /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735ED929C5E62A0038DAF8 /* Factory.cpp */; };
+		75735EDF29C98D870038DAF8 /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735EDD29C98D870038DAF8 /* Car.cpp */; };
+		75735EE229C9981F0038DAF8 /* CarBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735EE029C9981F0038DAF8 /* CarBuilder.cpp */; };
+		75735EE529C99B6F0038DAF8 /* CarDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735EE329C99B6F0038DAF8 /* CarDirector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,14 @@
 		75735ED329C5D8F60038DAF8 /* Logger.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
 		75735ED529C5DB060038DAF8 /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Observer.cpp; path = DesignPatterns/Singleton2/Observer.cpp; sourceTree = SOURCE_ROOT; };
 		75735ED629C5DB060038DAF8 /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Observer.hpp; path = DesignPatterns/Singleton2/Observer.hpp; sourceTree = SOURCE_ROOT; };
+		75735ED929C5E62A0038DAF8 /* Factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+		75735EDA29C5E62A0038DAF8 /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
+		75735EDD29C98D870038DAF8 /* Car.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Car.cpp; sourceTree = "<group>"; };
+		75735EDE29C98D870038DAF8 /* Car.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Car.hpp; sourceTree = "<group>"; };
+		75735EE029C9981F0038DAF8 /* CarBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CarBuilder.cpp; sourceTree = "<group>"; };
+		75735EE129C9981F0038DAF8 /* CarBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarBuilder.hpp; sourceTree = "<group>"; };
+		75735EE329C99B6F0038DAF8 /* CarDirector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CarDirector.cpp; sourceTree = "<group>"; };
+		75735EE429C99B6F0038DAF8 /* CarDirector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarDirector.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,8 @@
 		7554CDDB29C42A5B00CDE27F /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				75735EDC29C98D560038DAF8 /* Builder */,
+				75735ED829C5E6100038DAF8 /* Factory */,
 				75735ED129C5D8CD0038DAF8 /* Singleton2 */,
 				75735ECC29C599860038DAF8 /* Observer */,
 				7554CDDC29C42A5B00CDE27F /* main.cpp */,
@@ -86,6 +100,28 @@
 				75735ED329C5D8F60038DAF8 /* Logger.hpp */,
 			);
 			path = Singleton2;
+			sourceTree = "<group>";
+		};
+		75735ED829C5E6100038DAF8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				75735ED929C5E62A0038DAF8 /* Factory.cpp */,
+				75735EDA29C5E62A0038DAF8 /* Factory.hpp */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		75735EDC29C98D560038DAF8 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				75735EDD29C98D870038DAF8 /* Car.cpp */,
+				75735EDE29C98D870038DAF8 /* Car.hpp */,
+				75735EE029C9981F0038DAF8 /* CarBuilder.cpp */,
+				75735EE129C9981F0038DAF8 /* CarBuilder.hpp */,
+				75735EE329C99B6F0038DAF8 /* CarDirector.cpp */,
+				75735EE429C99B6F0038DAF8 /* CarDirector.hpp */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75735EDB29C5E62A0038DAF8 /* Factory.cpp in Sources */,
 				7554CDDD29C42A5B00CDE27F /* main.cpp in Sources */,
+				75735EE229C9981F0038DAF8 /* CarBuilder.cpp in Sources */,
 				75735ED729C5DB060038DAF8 /* Observer.cpp in Sources */,
+				75735EE529C99B6F0038DAF8 /* CarDirector.cpp in Sources */,
 				75735ED429C5D8F60038DAF8 /* Logger.cpp in Sources */,
+				75735EDF29C98D870038DAF8 /* Car.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

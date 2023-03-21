@@ -10,12 +10,14 @@
 
 #include <stdio.h>
 #include<iostream>
+#include<mutex>
 class Logger
 {
   
 private:
     Logger();
     static Logger* instance;
+    static std::mutex varLock;
 public:
     static Logger* getLogger();
 };
