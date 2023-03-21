@@ -14,6 +14,7 @@
 		75735EDF29C98D870038DAF8 /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735EDD29C98D870038DAF8 /* Car.cpp */; };
 		75735EE229C9981F0038DAF8 /* CarBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735EE029C9981F0038DAF8 /* CarBuilder.cpp */; };
 		75735EE529C99B6F0038DAF8 /* CarDirector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75735EE329C99B6F0038DAF8 /* CarDirector.cpp */; };
+		75735EEC29C9E1340038DAF8 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 75735EEB29C9E1340038DAF8 /* Documentation.docc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		75735EE129C9981F0038DAF8 /* CarBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarBuilder.hpp; sourceTree = "<group>"; };
 		75735EE329C99B6F0038DAF8 /* CarDirector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CarDirector.cpp; sourceTree = "<group>"; };
 		75735EE429C99B6F0038DAF8 /* CarDirector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CarDirector.hpp; sourceTree = "<group>"; };
+		75735EEB29C9E1340038DAF8 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		7554CDDB29C42A5B00CDE27F /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				75735EEA29C9E0EA0038DAF8 /* ParkingLot */,
 				75735EDC29C98D560038DAF8 /* Builder */,
 				75735ED829C5E6100038DAF8 /* Factory */,
 				75735ED129C5D8CD0038DAF8 /* Singleton2 */,
@@ -122,6 +125,14 @@
 				75735EE429C99B6F0038DAF8 /* CarDirector.hpp */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		75735EEA29C9E0EA0038DAF8 /* ParkingLot */ = {
+			isa = PBXGroup;
+			children = (
+				75735EEB29C9E1340038DAF8 /* Documentation.docc */,
+			);
+			path = ParkingLot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				75735EDB29C5E62A0038DAF8 /* Factory.cpp in Sources */,
 				7554CDDD29C42A5B00CDE27F /* main.cpp in Sources */,
 				75735EE229C9981F0038DAF8 /* CarBuilder.cpp in Sources */,
+				75735EEC29C9E1340038DAF8 /* Documentation.docc in Sources */,
 				75735ED729C5DB060038DAF8 /* Observer.cpp in Sources */,
 				75735EE529C99B6F0038DAF8 /* CarDirector.cpp in Sources */,
 				75735ED429C5D8F60038DAF8 /* Logger.cpp in Sources */,
